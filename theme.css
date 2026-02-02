@@ -1,0 +1,507 @@
+/* ============================================ */
+/* CYBRCOLORS - Inspired by Blackbird Theme     */
+/* ============================================ */
+
+/* Geist Mono Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* 1. Cybrcolors Palette */
+.theme-dark {
+    /* Cybrcolors Variables */
+    --no0: #030408;  /* Black base */
+    --no1: #05070D;  /* Black mid */
+    --no2: #0A0E1A;  /* Black light */
+    
+    --re0: #F24848;  /* Red base */
+    --re1: #631F21;  /* Red mid */
+    --re2: #331215;  /* Red dark */
+    
+    --gr0: #30F291;  /* Green base */
+    --gr1: #15633F;  /* Green mid */
+    --gr2: #0C3423;  /* Green dark */
+    
+    --ye0: #F2D230;  /* Yellow base */
+    --ye1: #635618;  /* Yellow mid */
+    --ye2: #332D10;  /* Yellow dark */
+    
+    --bl0: #3061F2;  /* Blue base */
+    --bl1: #152966;  /* Blue mid */
+    --bl2: #0C1737;  /* Blue dark */
+    
+    --vi0: #A130F2;  /* Violet base */
+    --vi1: #421666;  /* Violet mid */
+    --vi2: #230D37;  /* Violet dark */
+    
+    --cy0: #29BECC;  /* Cyan base */
+    --cy1: #124E56;  /* Cyan mid */
+    --cy2: #0B292F;  /* Cyan dark */
+    
+    --wh0: #898D99;  /* White base */
+    --wh1: #393B42;  /* White mid */
+    --wh2: #1E2025;  /* White dark */
+    
+    --me0: #4D5A80;  /* Metal grey base */
+    --me1: #212638;  /* Metal grey mid */
+    --me2: #0D1120;  /* Metal grey dark */
+    
+    --or0: #F26118;  /* Orange base */
+    --or1: #63290E;  /* Orange mid */
+    --or2: #33170B;  /* Orange dark */
+    
+    --pi0: #F230B2;  /* Pink base */
+    --pi1: #63164C;  /* Pink mid */
+    --pi2: #330D2A;  /* Pink dark */
+
+    /* Background Colors */
+    --background-primary: var(--no0);
+    --background-primary-alt: var(--no0);
+    --background-secondary: var(--no0);
+    --background-secondary-alt: var(--no0);
+
+    /* Text Colors */
+    --text-normal: var(--re0);
+    --text-muted: var(--wh0);
+    --text-accent: var(--cy0);
+    --text-on-accent: var(--no0);
+
+    /* Selection & Interaction */
+    --text-selection: rgba(161, 48, 242, 0.3);
+    --interactive-accent-rgb: 41, 190, 204;
+    --scrollbar-active-thumb-bg: rgba(77, 90, 128, 0.5);
+    --scrollbar-bg: rgba(33, 38, 56, 0.3);
+    --scrollbar-thumb-bg: rgba(77, 90, 128, 0.3);
+}
+
+/* 2. UI Elements */
+
+.titlebar-inner {
+  color: var(--text-normal);
+}
+
+.titlebar-button {
+  opacity: 1;
+}
+
+.suggestion-item.is-selected {
+  background-color: var(--text-selection);
+}
+
+/* 3. Editor and Preview */
+.cm-s-obsidian,
+.markdown-preview-view {
+  color: var(--text-normal);
+}
+
+body {
+  background-color: var(--no0);
+  color: var(--text-normal);
+  font-family: 'Geist Mono', 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+}
+
+.workspace {
+  background-color: var(--no0);
+}
+
+.workspace-leaf {
+  background-color: var(--no0);
+}
+
+/* Text Elements with Geist Mono */
+.markdown-source-view,
+.markdown-preview-view,
+.cm-s-obsidian,
+.cm-line,
+code,
+pre {
+  font-family: 'Geist Mono', 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+}
+
+/* 3.1. Headers */
+.cm-s-obsidian .cm-header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  overflow: visible;
+}
+
+h1, .markdown-preview-view h1 {
+  color: var(--re0);
+}
+
+h2, .markdown-preview-view h2 {
+  color: var(--or0);
+}
+
+h3, .markdown-preview-view h3 {
+  color: var(--ye0);
+}
+
+h4, .markdown-preview-view h4 {
+  color: var(--gr0);
+}
+
+h5, .markdown-preview-view h5 {
+  color: var(--cy0);
+}
+
+h6, .markdown-preview-view h6 {
+  color: var(--vi0);
+}
+
+/* 3.2. External Links */
+.cm-s-obsidian span.cm-link,
+a {
+  color: var(--cy0);
+}
+
+.cm-s-obsidian .cm-formatting-link+.cm-formatting-link-string+.cm-url,
+.cm-s-obsidian .cm-string.cm-url,
+.cm-s-obsidian span.cm-url {
+  color: var(--wh0);
+}
+
+.cm-s-obsidian .cm-string.cm-url.cm-hmd-footref2 {
+    color: var(--bl0);
+}
+
+/* 3.3. Internal Links & Tags */
+.cm-s-obsidian span.cm-hashtag,
+.cm-s-obsidian span.cm-hmd-internal-link,
+a.internal-link,
+a.tag {
+  color: var(--cy0);
+}
+
+a:hover,
+a.internal-link:hover {
+  color: var(--pi0);
+}
+
+/* 3.4. Blockquotes & Embeds */
+.cm-s-obsidian span.cm-quote {
+    color: var(--wh0);
+}
+
+blockquote {
+  border-left: 3px solid var(--cy0);
+  color: var(--wh0);
+}
+
+.cm-s-obsidian span.cm-builtin, 
+.cm-s-obsidian span.cm-hr {
+    color: var(--cy0);
+}
+
+/* 3.5. Code */
+.cm-s-obsidian span.cm-inline-code,
+code {
+  color: var(--gr0);
+  background-color: var(--no2);
+}
+
+.markdown-preview-view code {
+  color: var(--gr0);
+  background-color: var(--no2);
+}
+
+.cm-s-obsidian pre.HyperMD-codeblock {
+  color: var(--gr0);
+  background-color: var(--no2);
+}
+
+/* 3.6. Bold & Italic */
+.markdown-preview-view strong,
+.cm-strong {
+  color: var(--ye0);
+  font-weight: 700;
+}
+
+.markdown-preview-view em,
+.cm-em {
+  color: var(--pi0);
+  font-style: italic;
+}
+
+/* 3.7. Lists */
+.markdown-preview-view ul > li::marker,
+.markdown-preview-view ol > li::marker {
+  color: var(--cy0);
+  font-weight: bold;
+}
+
+/* 4. Graph View */
+.graph-view.color-fill {
+  color: var(--cy0);
+}
+
+.graph-view.color-fill-unresolved {
+  color: var(--cy1);
+  opacity: 1;
+}
+
+.graph-view.color-line {
+  color: var(--me0);
+}
+
+.graph-view.color-arrow {
+  color: var(--cy0);
+  opacity: 1;
+}
+
+.graph-view.color-text {
+  color: var(--wh0);
+}
+
+.graph-view.color-fill-highlight {
+  color: var(--pi0);
+}
+
+.graph-view.color-line-highlight {
+  color: var(--pi0);
+}
+
+.graph-view.color-fill-attachment {
+  color: var(--or0);
+}
+
+.graph-view.color-fill-tag {
+  color: var(--vi0);
+}
+
+/* 5. Tags */
+.tag {
+  background-color: var(--vi2);
+  color: var(--vi0);
+  border: 1px solid var(--vi1);
+}
+
+.tag:hover {
+  background-color: var(--vi1);
+  color: var(--vi0);
+}
+
+/* 6. Tables */
+table {
+  border-collapse: collapse;
+}
+
+th {
+  background-color: var(--me1);
+  color: var(--re0);
+  border: 1px solid var(--me0);
+}
+
+td {
+  border: 1px solid var(--me1);
+  color: var(--wh0);
+}
+
+tr:hover {
+  background-color: var(--no2);
+}
+
+/* 7. Horizontal Rules */
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, var(--re0), var(--or0), var(--ye0), var(--gr0), var(--cy0), var(--bl0), var(--vi0), var(--pi0));
+}
+
+/* 8. Selection */
+::selection {
+  background-color: var(--vi2);
+  color: var(--vi0);
+}
+
+/* 9. Checkboxes */
+.markdown-preview-view .task-list-item-checkbox {
+  border: 2px solid var(--gr1);
+  appearance: none;
+  background-color: transparent;
+}
+
+.markdown-preview-view .task-list-item-checkbox:checked {
+  background-color: var(--gr0);
+  border-color: var(--gr0);
+}
+
+.markdown-preview-view .task-list-item-checkbox:checked::after {
+  content: '✓';
+  color: var(--no0);
+  font-weight: bold;
+}
+
+/* 10. Callouts */
+.callout[data-callout="info"] {
+  background-color: var(--bl2);
+  border-left: 4px solid var(--bl0);
+}
+
+.callout[data-callout="success"] {
+  background-color: var(--gr2);
+  border-left: 4px solid var(--gr0);
+}
+
+.callout[data-callout="warning"] {
+  background-color: var(--ye2);
+  border-left: 4px solid var(--ye0);
+}
+
+.callout[data-callout="error"] {
+  background-color: var(--re2);
+  border-left: 4px solid var(--re0);
+}
+
+.callout[data-callout="note"] {
+  background-color: var(--cy2);
+  border-left: 4px solid var(--cy0);
+}
+
+/* 11. Status Bar */
+.status-bar {
+  background-color: var(--no0);
+  border-top: 1px solid var(--me1);
+  color: var(--wh0);
+}
+
+.status-bar-item {
+  color: var(--cy0);
+}
+
+/* 12. Navigation */
+.nav-file-title,
+.nav-folder-title {
+  color: var(--wh0);
+}
+
+.nav-file-title:hover,
+.nav-folder-title:hover {
+  color: var(--re0);
+  background-color: var(--no2);
+}
+
+.nav-file-title.is-active {
+  color: var(--cy0);
+  background-color: var(--me2);
+}
+
+/* 13. Search */
+.search-result-file-match {
+  background-color: var(--ye2);
+}
+
+.search-result-file-matched-text {
+  background-color: var(--ye1);
+  color: var(--ye0);
+}
+
+/* 14. Active Line */
+.cm-active.cm-line {
+  background-color: var(--me2);
+}
+
+/* 15. Icons & Buttons */
+/* Sidebar Icons */
+.nav-action-button,
+.clickable-icon,
+.side-dock-ribbon-action {
+  color: var(--cy0);
+  transition: color 0.2s ease;
+}
+
+.nav-action-button:hover,
+.clickable-icon:hover,
+.side-dock-ribbon-action:hover {
+  color: var(--pi0);
+}
+
+.nav-action-button.is-active,
+.clickable-icon.is-active,
+.side-dock-ribbon-action.is-active {
+  color: var(--re0);
+}
+
+/* SVG Icons */
+.svg-icon {
+  color: var(--cy0);
+}
+
+.svg-icon:hover {
+  color: var(--pi0);
+}
+
+/* Ribbon Icons */
+.workspace-ribbon {
+  background-color: var(--no0);
+}
+
+.workspace-ribbon-collapse-btn {
+  color: var(--cy0);
+}
+
+.workspace-ribbon-collapse-btn:hover {
+  color: var(--pi0);
+}
+
+/* View Header Icons */
+.view-header-icon {
+  color: var(--wh0);
+}
+
+.view-header-icon:hover {
+  color: var(--cy0);
+}
+
+.view-action:hover {
+  color: var(--pi0);
+}
+
+/* File Explorer Icons */
+.nav-folder-collapse-indicator {
+  color: var(--cy0);
+}
+
+.nav-file-icon,
+.nav-folder-icon {
+  color: var(--me0);
+}
+
+/* Settings & Modal Icons */
+.modal-close-button {
+  color: var(--wh0);
+}
+
+.modal-close-button:hover {
+  color: var(--re0);
+}
+
+/* Tab Icons */
+.workspace-tab-header-inner-icon {
+  color: var(--wh0);
+}
+
+.workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+  color: var(--cy0);
+}
+
+/* Dropdown & Menu Icons */
+.menu-item-icon {
+  color: var(--cy0);
+}
+
+.menu-item:hover .menu-item-icon {
+  color: var(--pi0);
+}
+
+/* Button Icons */
+button .svg-icon {
+  color: var(--cy0);
+}
+
+button:hover .svg-icon {
+  color: var(--pi0);
+}
