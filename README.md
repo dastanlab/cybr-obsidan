@@ -19,7 +19,7 @@ This theme brings the vibrant cybrcolors palette to Obsidian, featuring:
 
 ## Credits
 
-- Based on [cybrcolor](https://github.com/scherrer-txt/cybrcolor) color palette
+- Based on [cybrcolors](https://github.com/scherrer-txt/cybrcolors) color palette
 - Design principles from [cybrland](https://github.com/scherrer-txt/cybrland)
 - Inspired by the Blackbird theme
 
