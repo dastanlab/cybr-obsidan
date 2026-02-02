@@ -1,6 +1,6 @@
 # Cybr - Obsidian Theme
 
-A modern, cyberpunk-inspired theme for Obsidian, based on the [cybrcolors](https://github.com/dastanlab/cybrcolors) color palette and design principles from [cybrland](https://github.com/dastanlab/cybrland).
+A modern, cyberpunk-inspired theme for Obsidian, based on the [cybrcolor](https://github.com/scherrer-txt/cybrcolor) color palette and design principles from [cybrland](https://github.com/scherrer-txt/cybrland).
 
 ## About
 
@@ -19,8 +19,8 @@ This theme brings the vibrant cybrcolors palette to Obsidian, featuring:
 
 ## Credits
 
-- Based on [cybrcolors](https://github.com/dastanlab/cybrcolors) color palette
-- Design principles from [cybrland](https://github.com/dastanlab/cybrland)
+- Based on [cybrcolor](https://github.com/scherrer-txt/cybrcolor) color palette
+- Design principles from [cybrland](https://github.com/scherrer-txt/cybrland)
 - Inspired by the Blackbird theme
 
 ## License
