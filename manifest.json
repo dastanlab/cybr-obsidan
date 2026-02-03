@@ -1,8 +1,9 @@
 {
-  "name": "Cybr",
-  "version": "0.0.2",
+  "name": "Cybr Obsidian",
+  "version": "0.0.3",
   "minAppVersion": "1.6.0",
-  "author": "DASTANLAB",
+  "author": "Dastan Medetbekov",
   "authorUrl": "https://github.com/dastanlab",
-  "description": "Created by Dastan Medetbekov,  DASTANLAB 2026."
+  "repo": "dastanlab/cybr-obsidian",
+  "description": "Cyberpunk-inspired Obsidian theme."
 }
