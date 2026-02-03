@@ -1,3 +1,6 @@
+<img width="512" height="288" alt="shot-2026-02-03-130446" src="https://github.com/user-attachments/assets/c179cda0-a857-4d15-98d4-b881485f8c7b" />
+
+
 # Cybr - Obsidian Theme
 
 A modern, cyberpunk-inspired theme for Obsidian, based on the [cybrcolors](https://github.com/scherrer-txt/cybrcolors) color palette and design principles from [cybrland](https://github.com/scherrer-txt/cybrland).
@@ -29,4 +32,4 @@ This theme is licensed under the GNU General Public License v3.0. See [LICENSE](
 
 ## Author
 
-Created by Dastan Medetbekov - [GitHub](https://github.com/dastanmedetbekov)
+Created by Dastan Medetbekov - [GitHub](https://github.com/dastanmedetbekov) and DASTANLAB
