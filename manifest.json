@@ -1,7 +1,8 @@
 {
   "name": "Cybr",
-  "version": "1.5.0",
+  "version": "0.0.2",
   "minAppVersion": "1.6.0",
   "author": "Dastan Medetbekov",
-  "authorUrl": "https://github.com/dastanmedetbekov"
+  "authorUrl": "https://github.com/dastanmedetbekov",
+  "description": "Created by Dastan Medetbekov, 2026."
 }
